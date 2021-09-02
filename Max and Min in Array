@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void find_max(int arr[]){
+    int max=0;
+    for (int i=0;i<5;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    printf("max element is %d\n",max);
+}
+
+void find_min(int arr[]){
+    int min=arr[0];
+    for(int i=0;i<5;i++){
+        if(arr[i]<min){
+            min=arr[i];
+        }
+    }
+    printf("min element is %d",min);
+}
+  
+  
+int main(){
+    int arr[5]={10,4,5,23,97};
+    find_max(arr);
+    find_min(arr);
+    
+    return 0;
+}
